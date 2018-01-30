@@ -1,3 +1,7 @@
+# Interactive python dictionary that retrives information from JSON
+# Show the output if exists 
+# Also able to give suggestion from close words
+# If doesnt exists ask for new word
 import json
 from difflib import get_close_matches
 
