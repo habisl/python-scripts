@@ -9,7 +9,7 @@ data = json.load(open("data.json"))
 
 
 def translate(w):
-    w = w.lower()
+    w = w.lower() # .lower() was used to get the matching from json
     if w in data:
         return data[w]
     elif len(get_close_matches(w, data.keys())) > 0:
