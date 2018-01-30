@@ -9,7 +9,7 @@ data = json.load(open("data.json"))
 
 
 def translate(w):
-    w = w.lower() # .lower() was used to get the matching from json
+    w = w.lower() # .lower() was used to get all the lowercase matching from json
     if w in data:
         return data[w]
     elif w.title() in data:  # if user entered "texas" this will check for "Texas" as well.
