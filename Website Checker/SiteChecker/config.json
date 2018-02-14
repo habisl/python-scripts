@@ -1,0 +1,29 @@
+{
+  "sites": [
+    {
+      "url": "Example.com",
+      "name": "Example",
+      "content": "More information.."
+    },
+    {
+      "url": "https://www.google.fi/",
+      "name": "Google",
+      "content": "Gmail"
+    },
+    {
+      "url": "https://www.bing.com/",
+      "name": "Bing",
+      "content": "Sign In"
+    }
+
+
+  ],
+  "": "total_taration- Total number of times it will send the request, check_interval- After every <10> (in seconds)",
+  "frequency": {
+    "total_itarations": "3",
+    "check_interval": "10"
+  }
+}
+
+
+
