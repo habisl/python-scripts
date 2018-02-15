@@ -1,3 +1,11 @@
+"""
+!/usr/bin/env python3
+__author__ = Habibul Islam
+__license__ = "Public Domain"
+__version__ = 3.0
+
+"""
+
 import json
 
 
@@ -14,6 +22,20 @@ log_file = open(file_name, "w")
 log_file.write("Name" + "\t" + "   Date" + "\t" + "\t" + " Time" + "\t" + "Status"
                         + "\t" + "  Ping Time(ms)" + "  " + "Report" + "\n")  # Logs header
                       
-# Will be implemented soon...                      
+                     
                       
+
+
+for i in range(0, int(config['frequency']['total_itarations'])):  # number of times it should check
+    time.sleep(int(config['frequency']["check_interval"]))  # In seconds
+
+    for site in config['sites']:
+        try:
+            site_name = (site["name"])
+            req = requests.get(site["url"])
+            start = time.time()
+            soup = BeautifulSoup(req.text, 'html.parser')
+            content = soup.findAll(text=site['content'])
+# Need to be implemented soon... 
 log_file.close()
+# Need to be implemented soon... 
