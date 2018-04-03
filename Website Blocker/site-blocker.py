@@ -1,6 +1,8 @@
 import time
 from datetime import datetime as dt
 
+# hosts_path can be replaced with temp_hosts 
+# hosts_path = r"C:\Windows\System32\drivers\etc\hosts" 
 temp_hosts = "hosts"
 redirect = "127.0.0.1" # In order to redirect to the local DNS when u want to visit those website
 website_list = ["www.facebook.com", "facebook.com"]
