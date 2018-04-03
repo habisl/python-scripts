@@ -11,6 +11,8 @@ Usages:
 
 * Python3 must be installed in the machine.
 > python3 site-blocker.py
+In linux
+> sudo python3 site-blocker.py
 
 
 
