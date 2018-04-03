@@ -7,7 +7,7 @@ website_list = ["www.facebook.com", "facebook.com"]
 
 while True:
     # It calculates the time between 8-16 in current day
-    if dt(dt.now().year, dt.now().month, dt.now().day, 18) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 0):
+    if dt(dt.now().year, dt.now().month, dt.now().day, 8) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 16):
         print("This is work hours")
         with open(temp_hosts, 'r+') as file:
             content = file.read()
