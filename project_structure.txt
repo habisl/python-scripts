@@ -1,0 +1,12 @@
+# Full instruction is available here: https://realpython.com/python-application-layouts/
+
+# Sample Python project structure typically used for a CLI app:
+helloworld/
+│
+├── .gitignore
+├── helloworld.py
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── setup.py
+└── tests.py
